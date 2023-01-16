@@ -10,6 +10,7 @@ Now You Can Deploy Any VPS Server/ Replit
 
 Open bot.py
 Edit the api id , api hash , channel id
+Install Requirements
 
 Then Start bot.py
 Login in Your Telegram Account ( Same id of API ID & Hash )
