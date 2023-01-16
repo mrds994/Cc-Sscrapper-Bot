@@ -14,7 +14,6 @@ First Fork the Repo and Give a Start.
  • api_id & api_hash (from 'my.telegram.org')
  • Channel List = Scrape CC from Channel / Groups .
 ```
-If yo
 
 ___
 ## Deploy in VPS / Replit:
@@ -30,5 +29,5 @@ ___
 
 Login in Your Telegram Account ( Same id of API ID & Hash )
 
-Now Bot Started.
+Now CC Scrapper Started.
 Enjoy
