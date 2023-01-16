@@ -37,8 +37,8 @@ import re
 import telethon
 from sys import argv
 from prettytable import PrettyTable
-api_id = 1111111111 
-api_hash = 'xxxxxxxxxxxxxxxx'
+api_id = 1111111111 # YOUR API ID FROM my.telegram.org
+api_hash = 'xxxxxxxxxxxxxxxx' # API HASH FROM my.telegram.org
 def lista(dets):
     dets = str(dets)
     arrays = re.findall(r'[0-9]+', dets)
@@ -50,9 +50,9 @@ client = TelegramClient("ssshl", api_id, api_hash)
 client2 = TelegramClient("bothg", api_id,api_hash)
 client.start()
 client2.start()
-def RoldexVerseCcs(id):
+def XenScrape(id):
     id = str(id)
-    with open('UltraVerseCcs.txt', 'w') as f:
+    with open('xenscrape.txt', 'w') as f:
         if f.write(id):
             return True
         else:
@@ -62,13 +62,13 @@ def RoldexVerseCcs(id):
 global str      
 
 with client:
-    print("started")
+    print("Build Started")
     while True:
         try:
             req = requests.Session()
-            f = open('UltraVerseCcs.txt', 'r')
+            f = open('xenscrape.txt', 'r')
             rd = int(f.read())
-            channelList = ["https://t.me/XenScrape","https://t.me/CCXEN"]
+            channelList = ["https://t.me/XenScrape","https://t.me/CCXEN"] # FOR MORE CHANNEL LINKS VISIT @XENCCLIST
             fornum = len(channelList)
             for i in range(0,fornum):
                 message = client.iter_messages(channelList[i],min_id=rd,wait_time=5)
@@ -121,10 +121,10 @@ with client:
                             binBank = apibinlist["bank"]["name"]
                             respo = f"""
 {lista} - {binBank} - {binEmoji} 
-@shurman"""
+SCRAPPER BY @AFN4NX"""
 
-                        client2.send_message(-10011111111111, respo,parse_mode='html')
-                wd = RoldexVerseCcs(message.id)
+                        client2.send_message(-10011111111111, respo,parse_mode='html') # CHANNEL ID FOR POST CC
+                wd = XenScrape(message.id)
         except errors.FloodWaitError as e:
             print('Have to sleep', e.seconds, 'seconds')
             time.sleep(e.seconds)
