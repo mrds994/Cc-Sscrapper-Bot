@@ -8,14 +8,26 @@ HOW To Deploy ?
 
 First Fork the Repo and Give a Start.
 
-Download the Bot Files.
-Now You Can Deploy Any VPS Server/ Replit
+**Requirements toRun this Userbot**
+```
+ • SESSION OF TELETHON (requires your tg ac auth)
+ • api_id & api_hash (from 'my.telegram.org')
+ • Channel List = Scrape CC from Channel / Groups .
+```
+If yo
 
-Open bot.py
-Edit the api id , api hash , channel id
-Install Requirements
+___
+## Deploy in VPS / Replit:
+```
+git clone https://github.com/AFN4NX/Cc-Sscrapper-Bot.git (clone this repo if using vps )
 
-Then Start bot.py
+1- pip3 install requirements.txt
+
+2- python3 bot.py
+```
+• rest steps are same as above just give what it ask
+___
+
 Login in Your Telegram Account ( Same id of API ID & Hash )
 
 Now Bot Started.
