@@ -37,8 +37,8 @@ import re
 import telethon
 from sys import argv
 from prettytable import PrettyTable
-api_id = 1111111111 # YOUR API ID FROM my.telegram.org
-api_hash = 'xxxxxxxxxxxxxxxx' # API HASH FROM my.telegram.org
+api_id = 29854177 # YOUR API ID FROM my.telegram.org
+api_hash = '69a041fffe170eb8d2fd4949a675ad37' # API HASH FROM my.telegram.org
 def lista(dets):
     dets = str(dets)
     arrays = re.findall(r'[0-9]+', dets)
@@ -121,9 +121,9 @@ with client:
                             binBank = apibinlist["bank"]["name"]
                             respo = f"""
 {lista} - {binBank} - {binEmoji} 
-SCRAPPER BY @AFN4NX"""
+SCRAPPER BY @MrDs"""
 
-                        client2.send_message(-10011111111111, respo,parse_mode='html') # CHANNEL ID FOR POST CC
+                        client2.send_message(-1001602861176, respo,parse_mode='html') # CHANNEL ID FOR POST CC
                 wd = XenScrape(message.id)
         except errors.FloodWaitError as e:
             print('Have to sleep', e.seconds, 'seconds')
